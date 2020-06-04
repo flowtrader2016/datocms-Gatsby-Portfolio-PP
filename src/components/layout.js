@@ -66,6 +66,11 @@ const TemplateWrapper = ({ children }) => {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
+                  <a href="https://www.etsy.com/uk/shop/PeppaPotter">
+                    Etsy Store
+                  </a>
+                </li>
+                <li>
                   <Link to="/about">About</Link>
                 </li>
               </ul>
