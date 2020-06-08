@@ -41,7 +41,7 @@ export const query = graphql`
           excerpt
           coverImage {
             fluid(maxWidth: 450, imgixParams: { fm: "jpg", auto: "compress" }) {
-              ...GatsbyDatoCmsSizes
+              ...GatsbyDatoCmsFluid_noBase64
             }
           }
         }

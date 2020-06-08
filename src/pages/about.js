@@ -37,7 +37,7 @@ export const query = graphql`
       subtitle
       photo {
         fluid(maxWidth: 600, imgixParams: { fm: "jpg", auto: "compress" }) {
-          ...GatsbyDatoCmsSizes
+          ...GatsbyDatoCmsFluid_noBase64
         }
       }
       bioNode {
