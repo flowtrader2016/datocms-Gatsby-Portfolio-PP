@@ -1,4 +1,4 @@
-require('dotenv').config()
+require("dotenv").config();
 
 module.exports = {
   siteMetadata: {
@@ -14,5 +14,12 @@ module.exports = {
         apiToken: process.env.DATO_API_TOKEN,
       },
     },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "peppapotter.com",
+        acl: null,
+      },
+    },
   ],
-}
+};
